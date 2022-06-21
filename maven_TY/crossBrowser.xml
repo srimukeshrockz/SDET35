@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="4" parallel="tests">
+  <test name="TestRunner1">
+  <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.crm.contactGroup.Vitger.CreateContactGroupTest"/>
+      <class name="com.crm.contactGroup.Vitger.CreateContactOrganisationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="testRunner2">
+  <parameter name="BROWSER" value="chrome"/>
+  <classes>
+  <class name="com.crm.organization.CreateOrganizationAssigmentTest"/>
+      <class name="com.crm.organization.CreateOraganizationWithIndustryTest"/>
+      
+  </classes>
+  </test>
+</suite> <!-- Suite -->

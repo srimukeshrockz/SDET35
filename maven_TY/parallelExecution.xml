@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="suite">
+<test parallel="classes" name="Test1">
+<classes>
+<class name="com.crm.contactGroup.Vitger.CreateContactGroupTest"/>
+<class name="com.crm.contactGroup.Vitger.CreateContactOrganisationTest"/>
+<class name="com.crm.organization.CreateOraganizationWithIndustryTest"/>
+<class name="com.crm.organization.CreateOrganizationAssigmentTest"/>
+</classes>
+</test>
+</suite>

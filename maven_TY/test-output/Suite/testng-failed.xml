@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Failed suite [suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="classes" name="Test1(failed)">
+    <classes>
+      <class name="com.crm.contactGroup.Vitger.CreateContactOrganisationTest">
+        <methods>
+          <include name="LoginToApplication"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="logout"/>
+          <include name="CloseTheDbConnection"/>
+          <include name="connectToDataBase"/>
+          <include name="createContactOrganisationTest"/>
+        </methods>
+      </class> <!-- com.crm.contactGroup.Vitger.CreateContactOrganisationTest -->
+      <class name="com.crm.contactGroup.Vitger.CreateContactGroupTest">
+        <methods>
+          <include name="createContactGroupTest"/>
+          <include name="LoginToApplication"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="logout"/>
+          <include name="CloseTheDbConnection"/>
+          <include name="connectToDataBase"/>
+        </methods>
+      </class> <!-- com.crm.contactGroup.Vitger.CreateContactGroupTest -->
+      <class name="com.crm.organization.CreateOraganizationWithIndustryTest">
+        <methods>
+          <include name="LoginToApplication"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="logout"/>
+          <include name="CloseTheDbConnection"/>
+          <include name="createOraganizationWithIndustryTest"/>
+          <include name="connectToDataBase"/>
+        </methods>
+      </class> <!-- com.crm.organization.CreateOraganizationWithIndustryTest -->
+      <class name="com.crm.organization.CreateOrganizationAssigmentTest">
+        <methods>
+          <include name="LoginToApplication"/>
+          <include name="launchTheBrowser"/>
+          <include name="createOrganizationAssigmentTest"/>
+          <include name="closeTheBrowser"/>
+          <include name="logout"/>
+          <include name="CloseTheDbConnection"/>
+          <include name="connectToDataBase"/>
+        </methods>
+      </class> <!-- com.crm.organization.CreateOrganizationAssigmentTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [suite] -->
