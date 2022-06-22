@@ -43,8 +43,9 @@ public void createContactGroupTest() throws Throwable
 //	String URL = fLib.getPropertyKeyValue("url");
 //	String UN=fLib.getPropertyKeyValue("username");
 //	String PWD = fLib.getPropertyKeyValue("password");
-//	String BROWSER = fLib.getPropertyKeyValue("browser");
-//	
+//	String BROWSER = fLib.getPropertyKeyValue("browser");	
+//	in eclipse i have comment
+
 	int ranNum = jLib.getRandomNumber();	
 //	
 //	if(BROWSER.equalsIgnoreCase("chrome"))
