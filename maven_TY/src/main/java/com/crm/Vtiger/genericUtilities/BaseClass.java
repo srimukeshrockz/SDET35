@@ -39,13 +39,13 @@ public class BaseClass {
 	 * launch the browser
 	 * @throws Throwable 
 	 */
-	//@Parameters("BROWSER")  // this line is parallel execution
+	@Parameters("BROWSER")  // this line is parallel execution
 	@BeforeClass(groups = {"smokeTest","regreesionTest"})
 	public void launchTheBrowser() throws Throwable
 	{
 		
-		String BROWSER = fLib.getPropertyKeyValue("browser");
-		String URL = fLib.getPropertyKeyValue("url");
+		//String BROWSER = fLib.getPropertyKeyValue("browser");
+		//String URL = fLib.getPropertyKeyValue("url");
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
