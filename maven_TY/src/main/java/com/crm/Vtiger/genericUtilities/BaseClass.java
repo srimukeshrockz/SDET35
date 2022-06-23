@@ -39,12 +39,12 @@ public class BaseClass {
 	 * launch the browser
 	 * @throws Throwable 
 	 */
-	@Parameters("BROWSER")  // this line is parallel execution
+	//@Parameters("BROWSER")  // this line is parallel execution
 	@BeforeClass(groups = {"smokeTest","regreesionTest"})
-	public void launchTheBrowser(String BROWSER) throws Throwable
+	public void launchTheBrowser() throws Throwable
 	{
 		
-		//String BROWSER = fLib.getPropertyKeyValue("browser");
+		String BROWSER = fLib.getPropertyKeyValue("browser");
 		String URL = fLib.getPropertyKeyValue("url");
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
