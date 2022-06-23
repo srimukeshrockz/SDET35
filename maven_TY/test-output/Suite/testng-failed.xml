@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="4" parallel="tests" name="testRunner2(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="testRunner2(failed)">
     <parameter name="BROWSER" value="chrome"/>
     <classes>
       <class name="com.crm.organization.CreateOraganizationWithIndustryTest">
@@ -15,6 +15,17 @@
           <include name="connectToDataBase"/>
         </methods>
       </class> <!-- com.crm.organization.CreateOraganizationWithIndustryTest -->
+      <class name="com.crm.organization.CreateOrganizationAssigmentTest">
+        <methods>
+          <include name="LoginToApplication"/>
+          <include name="launchTheBrowser"/>
+          <include name="createOrganizationAssigmentTest"/>
+          <include name="closeTheBrowser"/>
+          <include name="CloseTheDbConnection"/>
+          <include name="logout"/>
+          <include name="connectToDataBase"/>
+        </methods>
+      </class> <!-- com.crm.organization.CreateOrganizationAssigmentTest -->
     </classes>
   </test> <!-- testRunner2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
