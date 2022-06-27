@@ -43,9 +43,10 @@ public class BaseClass {
 	@BeforeClass(groups = {"smokeTest","regreesionTest"})
 	public void launchTheBrowser() throws Throwable
 	{
-		
-		String BROWSER = fLib.getPropertyKeyValue("browser");
-		String URL = fLib.getPropertyKeyValue("url");
+		String BROWSER = System.getProperty("browser");
+		String URL= System.getProperty("url");
+		//String BROWSER = fLib.getPropertyKeyValue("browser");
+		//String URL = fLib.getPropertyKeyValue("url");
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
